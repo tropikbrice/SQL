@@ -1,8 +1,8 @@
-CREATE FUNCTION sf_RemoveExtraChars (@NAME nvarchar(50))
-RETURNS nvarchar(50)
+CREATE FUNCTION dbo.sf_RemoveExtraChars (@NAME nvarchar(350))
+RETURNS nvarchar(350)
 AS
 BEGIN
-  declare @TempString nvarchar(100)
+  declare @TempString nvarchar(500)
   set @TempString = @NAME 
   set @TempString = LOWER(@TempString)
 
